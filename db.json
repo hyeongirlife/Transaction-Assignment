@@ -1,0 +1,51 @@
+{
+    "mergeTransactions": [
+      {
+        "amount": 10000,
+        "balance": 50000,
+        "cancelYn": "N",
+        "date": "2024-05-06",
+        "storeId": "store-001",
+        "transactionId": "tx-001",
+        "productId": "prod-001"
+      },
+      {
+        "amount": 20000,
+        "balance": 70000,
+        "cancelYn": "Y",
+        "date": "2024-05-05",
+        "storeId": "store-002",
+        "transactionId": "tx-002",
+        "productId": "prod-002"
+      }
+    ],
+    "mergeTransactionsById": {
+      "tx-001": {
+        "amount": 10000,
+        "balance": 50000,
+        "cancelYn": "N",
+        "date": "2024-05-06",
+        "storeId": "store-001",
+        "transactionId": "tx-001",
+        "productId": "prod-001"
+      },
+      "tx-002": {
+        "amount": 20000,
+        "balance": 70000,
+        "cancelYn": "Y",
+        "date": "2024-05-05",
+        "storeId": "store-002",
+        "transactionId": "tx-002",
+        "productId": "prod-002"
+      }
+    },
+    "batchHistory": [
+      {
+        "startedAt": "2024-05-06T10:00:00.000Z",
+        "endedAt": "2024-05-06T10:00:10.000Z",
+        "total": 2,
+        "success": 2,
+        "fail": 0
+      }
+    ]
+  }

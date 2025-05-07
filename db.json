@@ -1,51 +1,1042 @@
 {
     "mergeTransactions": [
-      {
-        "amount": 10000,
-        "balance": 50000,
-        "cancelYn": "N",
-        "date": "2024-05-06",
-        "storeId": "store-001",
-        "transactionId": "tx-001",
-        "productId": "prod-001"
-      },
-      {
-        "amount": 20000,
-        "balance": 70000,
-        "cancelYn": "Y",
-        "date": "2024-05-05",
-        "storeId": "store-002",
-        "transactionId": "tx-002",
-        "productId": "prod-002"
-      }
+        {
+            "amount": 59102,
+            "balance": 555119,
+            "cancelYn": "N",
+            "date": "2025-04-16",
+            "storeId": "store-9",
+            "transactionId": "tx-10",
+            "productId": "prod-84"
+        },
+        {
+            "amount": 78591,
+            "balance": 666757,
+            "cancelYn": "Y",
+            "date": "2025-04-09",
+            "storeId": "store-3",
+            "transactionId": "tx-20",
+            "productId": "prod-31"
+        },
+        {
+            "amount": 30249,
+            "balance": 369600,
+            "cancelYn": "N",
+            "date": "2025-05-01",
+            "storeId": "store-3",
+            "transactionId": "tx-30",
+            "productId": "prod-98"
+        },
+        {
+            "amount": 54821,
+            "balance": 5844,
+            "cancelYn": "N",
+            "date": "2025-04-19",
+            "storeId": "store-4",
+            "transactionId": "tx-40",
+            "productId": "prod-32"
+        },
+        {
+            "amount": 85044,
+            "balance": 984507,
+            "cancelYn": "N",
+            "date": "2025-05-06",
+            "storeId": "store-4",
+            "transactionId": "tx-50",
+            "productId": "prod-82"
+        },
+        {
+            "amount": 53860,
+            "balance": 565344,
+            "cancelYn": "N",
+            "date": "2025-04-30",
+            "storeId": "store-1",
+            "transactionId": "tx-60",
+            "productId": "prod-82"
+        },
+        {
+            "amount": 32618,
+            "balance": 290217,
+            "cancelYn": "Y",
+            "date": "2025-04-17",
+            "storeId": "store-8",
+            "transactionId": "tx-70",
+            "productId": "prod-88"
+        },
+        {
+            "amount": 37473,
+            "balance": 832697,
+            "cancelYn": "N",
+            "date": "2025-05-06",
+            "storeId": "store-10",
+            "transactionId": "tx-80",
+            "productId": "prod-78"
+        },
+        {
+            "amount": 27931,
+            "balance": 404474,
+            "cancelYn": "N",
+            "date": "2025-04-11",
+            "storeId": "store-2",
+            "transactionId": "tx-90",
+            "productId": "prod-40"
+        },
+        {
+            "amount": 91299,
+            "balance": 332503,
+            "cancelYn": "N",
+            "date": "2025-04-16",
+            "storeId": "store-9",
+            "transactionId": "tx-99",
+            "productId": "prod-96"
+        },
+        {
+            "amount": 38434,
+            "balance": 996031,
+            "cancelYn": "N",
+            "date": "2025-05-02",
+            "storeId": "store-5",
+            "transactionId": "tx-109",
+            "productId": "prod-61"
+        },
+        {
+            "amount": 88544,
+            "balance": 933902,
+            "cancelYn": "Y",
+            "date": "2025-05-03",
+            "storeId": "store-10",
+            "transactionId": "tx-128",
+            "productId": "prod-16"
+        },
+        {
+            "amount": 54292,
+            "balance": 44642,
+            "cancelYn": "N",
+            "date": "2025-05-01",
+            "storeId": "store-10",
+            "transactionId": "tx-137",
+            "productId": "prod-63"
+        },
+        {
+            "amount": 27198,
+            "balance": 429684,
+            "cancelYn": "Y",
+            "date": "2025-04-23",
+            "storeId": "store-10",
+            "transactionId": "tx-147",
+            "productId": "prod-19"
+        },
+        {
+            "amount": 9413,
+            "balance": 587222,
+            "cancelYn": "Y",
+            "date": "2025-04-18",
+            "storeId": "store-10",
+            "transactionId": "tx-157",
+            "productId": "prod-3"
+        }
     ],
     "mergeTransactionsById": {
-      "tx-001": {
-        "amount": 10000,
-        "balance": 50000,
-        "cancelYn": "N",
-        "date": "2024-05-06",
-        "storeId": "store-001",
-        "transactionId": "tx-001",
-        "productId": "prod-001"
-      },
-      "tx-002": {
-        "amount": 20000,
-        "balance": 70000,
-        "cancelYn": "Y",
-        "date": "2024-05-05",
-        "storeId": "store-002",
-        "transactionId": "tx-002",
-        "productId": "prod-002"
-      }
+        "tx-1": {
+            "amount": 90894,
+            "balance": 165908,
+            "cancelYn": "N",
+            "date": "2025-04-24",
+            "storeId": "store-6",
+            "transactionId": "tx-1",
+            "productId": "prod-5"
+        },
+        "tx-2": {
+            "amount": 44471,
+            "balance": 201004,
+            "cancelYn": "N",
+            "date": "2025-04-29",
+            "storeId": "store-6",
+            "transactionId": "tx-2",
+            "productId": "prod-72"
+        },
+        "tx-3": {
+            "amount": 87873,
+            "balance": 906470,
+            "cancelYn": "N",
+            "date": "2025-04-10",
+            "storeId": "store-7",
+            "transactionId": "tx-3",
+            "productId": "prod-82"
+        },
+        "tx-4": {
+            "amount": 3662,
+            "balance": 402621,
+            "cancelYn": "Y",
+            "date": "2025-05-04",
+            "storeId": "store-7",
+            "transactionId": "tx-4",
+            "productId": "prod-12"
+        },
+        "tx-5": {
+            "amount": 8191,
+            "balance": 161939,
+            "cancelYn": "Y",
+            "date": "2025-04-25",
+            "storeId": "store-7",
+            "transactionId": "tx-5",
+            "productId": "prod-44"
+        },
+        "tx-6": {
+            "amount": 33799,
+            "balance": 51523,
+            "cancelYn": "Y",
+            "date": "2025-04-27",
+            "storeId": "store-8",
+            "transactionId": "tx-6",
+            "productId": "prod-4"
+        },
+        "tx-7": {
+            "amount": 37048,
+            "balance": 262694,
+            "cancelYn": "Y",
+            "date": "2025-04-11",
+            "storeId": "store-4",
+            "transactionId": "tx-7",
+            "productId": "prod-18"
+        },
+        "tx-8": {
+            "amount": 43186,
+            "balance": 653094,
+            "cancelYn": "N",
+            "date": "2025-04-28",
+            "storeId": "store-8",
+            "transactionId": "tx-8",
+            "productId": "prod-93"
+        },
+        "tx-9": {
+            "amount": 13561,
+            "balance": 358141,
+            "cancelYn": "Y",
+            "date": "2025-04-30",
+            "storeId": "store-7",
+            "transactionId": "tx-9",
+            "productId": "prod-70"
+        },
+        "tx-10": {
+            "amount": 59102,
+            "balance": 555119,
+            "cancelYn": "N",
+            "date": "2025-04-16",
+            "storeId": "store-9",
+            "transactionId": "tx-10",
+            "productId": "prod-84"
+        },
+        "tx-11": {
+            "amount": 73721,
+            "balance": 178297,
+            "cancelYn": "N",
+            "date": "2025-04-08",
+            "storeId": "store-6",
+            "transactionId": "tx-11",
+            "productId": "prod-68"
+        },
+        "tx-12": {
+            "amount": 94430,
+            "balance": 29278,
+            "cancelYn": "N",
+            "date": "2025-04-25",
+            "storeId": "store-8",
+            "transactionId": "tx-12",
+            "productId": "prod-19"
+        },
+        "tx-13": {
+            "amount": 27576,
+            "balance": 920308,
+            "cancelYn": "N",
+            "date": "2025-05-05",
+            "storeId": "store-7",
+            "transactionId": "tx-13",
+            "productId": "prod-96"
+        },
+        "tx-14": {
+            "amount": 55132,
+            "balance": 935705,
+            "cancelYn": "Y",
+            "date": "2025-04-30",
+            "storeId": "store-8",
+            "transactionId": "tx-14",
+            "productId": "prod-93"
+        },
+        "tx-15": {
+            "amount": 31524,
+            "balance": 580311,
+            "cancelYn": "Y",
+            "date": "2025-05-06",
+            "storeId": "store-7",
+            "transactionId": "tx-15",
+            "productId": "prod-44"
+        },
+        "tx-16": {
+            "amount": 85081,
+            "balance": 83907,
+            "cancelYn": "N",
+            "date": "2025-04-23",
+            "storeId": "store-2",
+            "transactionId": "tx-16",
+            "productId": "prod-25"
+        },
+        "tx-17": {
+            "amount": 61232,
+            "balance": 610239,
+            "cancelYn": "N",
+            "date": "2025-05-06",
+            "storeId": "store-3",
+            "transactionId": "tx-17",
+            "productId": "prod-65"
+        },
+        "tx-18": {
+            "amount": 931,
+            "balance": 204872,
+            "cancelYn": "N",
+            "date": "2025-04-09",
+            "storeId": "store-3",
+            "transactionId": "tx-18",
+            "productId": "prod-82"
+        },
+        "tx-19": {
+            "amount": 9398,
+            "balance": 203770,
+            "cancelYn": "N",
+            "date": "2025-04-08",
+            "storeId": "store-4",
+            "transactionId": "tx-19",
+            "productId": "prod-58"
+        },
+        "tx-20": {
+            "amount": 78591,
+            "balance": 666757,
+            "cancelYn": "Y",
+            "date": "2025-04-09",
+            "storeId": "store-3",
+            "transactionId": "tx-20",
+            "productId": "prod-31"
+        },
+        "tx-21": {
+            "amount": 14221,
+            "balance": 272353,
+            "cancelYn": "N",
+            "date": "2025-04-28",
+            "storeId": "store-8",
+            "transactionId": "tx-21",
+            "productId": "prod-10"
+        },
+        "tx-22": {
+            "amount": 54567,
+            "balance": 563075,
+            "cancelYn": "Y",
+            "date": "2025-04-21",
+            "storeId": "store-6",
+            "transactionId": "tx-22",
+            "productId": "prod-18"
+        },
+        "tx-23": {
+            "amount": 87990,
+            "balance": 811937,
+            "cancelYn": "Y",
+            "date": "2025-04-25",
+            "storeId": "store-1",
+            "transactionId": "tx-23",
+            "productId": "prod-90"
+        },
+        "tx-24": {
+            "amount": 79214,
+            "balance": 108076,
+            "cancelYn": "N",
+            "date": "2025-05-01",
+            "storeId": "store-3",
+            "transactionId": "tx-24",
+            "productId": "prod-51"
+        },
+        "tx-25": {
+            "amount": 86217,
+            "balance": 297020,
+            "cancelYn": "N",
+            "date": "2025-05-02",
+            "storeId": "store-1",
+            "transactionId": "tx-25",
+            "productId": "prod-19"
+        },
+        "tx-26": {
+            "amount": 37397,
+            "balance": 841080,
+            "cancelYn": "Y",
+            "date": "2025-04-12",
+            "storeId": "store-5",
+            "transactionId": "tx-26",
+            "productId": "prod-70"
+        },
+        "tx-27": {
+            "amount": 97322,
+            "balance": 659054,
+            "cancelYn": "Y",
+            "date": "2025-04-14",
+            "storeId": "store-9",
+            "transactionId": "tx-27",
+            "productId": "prod-64"
+        },
+        "tx-28": {
+            "amount": 10521,
+            "balance": 52456,
+            "cancelYn": "Y",
+            "date": "2025-04-09",
+            "storeId": "store-7",
+            "transactionId": "tx-28",
+            "productId": "prod-41"
+        },
+        "tx-29": {
+            "amount": 44272,
+            "balance": 412345,
+            "cancelYn": "Y",
+            "date": "2025-04-18",
+            "storeId": "store-9",
+            "transactionId": "tx-29",
+            "productId": "prod-54"
+        },
+        "tx-30": {
+            "amount": 30249,
+            "balance": 369600,
+            "cancelYn": "N",
+            "date": "2025-05-01",
+            "storeId": "store-3",
+            "transactionId": "tx-30",
+            "productId": "prod-98"
+        },
+        "tx-31": {
+            "amount": 54101,
+            "balance": 810013,
+            "cancelYn": "N",
+            "date": "2025-04-27",
+            "storeId": "store-5",
+            "transactionId": "tx-31",
+            "productId": "prod-70"
+        },
+        "tx-32": {
+            "amount": 70076,
+            "balance": 744118,
+            "cancelYn": "N",
+            "date": "2025-04-13",
+            "storeId": "store-6",
+            "transactionId": "tx-32",
+            "productId": "prod-11"
+        },
+        "tx-33": {
+            "amount": 19553,
+            "balance": 387560,
+            "cancelYn": "N",
+            "date": "2025-04-23",
+            "storeId": "store-9",
+            "transactionId": "tx-33",
+            "productId": "prod-44"
+        },
+        "tx-34": {
+            "amount": 62305,
+            "balance": 335001,
+            "cancelYn": "Y",
+            "date": "2025-05-05",
+            "storeId": "store-6",
+            "transactionId": "tx-34",
+            "productId": "prod-59"
+        },
+        "tx-35": {
+            "amount": 30458,
+            "balance": 95818,
+            "cancelYn": "Y",
+            "date": "2025-04-18",
+            "storeId": "store-6",
+            "transactionId": "tx-35",
+            "productId": "prod-49"
+        },
+        "tx-36": {
+            "amount": 1826,
+            "balance": 409539,
+            "cancelYn": "Y",
+            "date": "2025-04-27",
+            "storeId": "store-6",
+            "transactionId": "tx-36",
+            "productId": "prod-33"
+        },
+        "tx-37": {
+            "amount": 2265,
+            "balance": 921302,
+            "cancelYn": "Y",
+            "date": "2025-04-23",
+            "storeId": "store-3",
+            "transactionId": "tx-37",
+            "productId": "prod-55"
+        },
+        "tx-38": {
+            "amount": 38512,
+            "balance": 921076,
+            "cancelYn": "Y",
+            "date": "2025-04-28",
+            "storeId": "store-1",
+            "transactionId": "tx-38",
+            "productId": "prod-30"
+        },
+        "tx-39": {
+            "amount": 38470,
+            "balance": 528669,
+            "cancelYn": "N",
+            "date": "2025-05-06",
+            "storeId": "store-9",
+            "transactionId": "tx-39",
+            "productId": "prod-65"
+        },
+        "tx-40": {
+            "amount": 54821,
+            "balance": 5844,
+            "cancelYn": "N",
+            "date": "2025-04-19",
+            "storeId": "store-4",
+            "transactionId": "tx-40",
+            "productId": "prod-32"
+        },
+        "tx-41": {
+            "amount": 64472,
+            "balance": 89808,
+            "cancelYn": "N",
+            "date": "2025-04-30",
+            "storeId": "store-6",
+            "transactionId": "tx-41",
+            "productId": "prod-89"
+        },
+        "tx-42": {
+            "amount": 10345,
+            "balance": 966217,
+            "cancelYn": "N",
+            "date": "2025-05-06",
+            "storeId": "store-3",
+            "transactionId": "tx-42",
+            "productId": "prod-75"
+        },
+        "tx-43": {
+            "amount": 39392,
+            "balance": 683656,
+            "cancelYn": "Y",
+            "date": "2025-04-30",
+            "storeId": "store-2",
+            "transactionId": "tx-43",
+            "productId": "prod-93"
+        },
+        "tx-44": {
+            "amount": 54325,
+            "balance": 671261,
+            "cancelYn": "Y",
+            "date": "2025-04-29",
+            "storeId": "store-9",
+            "transactionId": "tx-44",
+            "productId": "prod-87"
+        },
+        "tx-45": {
+            "amount": 98531,
+            "balance": 951263,
+            "cancelYn": "N",
+            "date": "2025-04-24",
+            "storeId": "store-8",
+            "transactionId": "tx-45",
+            "productId": "prod-55"
+        },
+        "tx-46": {
+            "amount": 97726,
+            "balance": 962698,
+            "cancelYn": "Y",
+            "date": "2025-04-27",
+            "storeId": "store-9",
+            "transactionId": "tx-46",
+            "productId": "prod-89"
+        },
+        "tx-47": {
+            "amount": 23405,
+            "balance": 852176,
+            "cancelYn": "Y",
+            "date": "2025-04-11",
+            "storeId": "store-4",
+            "transactionId": "tx-47",
+            "productId": "prod-50"
+        },
+        "tx-48": {
+            "amount": 56853,
+            "balance": 730684,
+            "cancelYn": "Y",
+            "date": "2025-04-29",
+            "storeId": "store-7",
+            "transactionId": "tx-48",
+            "productId": "prod-45"
+        },
+        "tx-49": {
+            "amount": 22565,
+            "balance": 663255,
+            "cancelYn": "N",
+            "date": "2025-04-11",
+            "storeId": "store-1",
+            "transactionId": "tx-49",
+            "productId": "prod-61"
+        },
+        "tx-50": {
+            "amount": 85044,
+            "balance": 984507,
+            "cancelYn": "N",
+            "date": "2025-05-06",
+            "storeId": "store-4",
+            "transactionId": "tx-50",
+            "productId": "prod-82"
+        },
+        "tx-51": {
+            "amount": 13875,
+            "balance": 998852,
+            "cancelYn": "Y",
+            "date": "2025-05-02",
+            "storeId": "store-7",
+            "transactionId": "tx-51",
+            "productId": "prod-54"
+        },
+        "tx-52": {
+            "amount": 42092,
+            "balance": 142811,
+            "cancelYn": "Y",
+            "date": "2025-05-01",
+            "storeId": "store-6",
+            "transactionId": "tx-52",
+            "productId": "prod-91"
+        },
+        "tx-53": {
+            "amount": 10107,
+            "balance": 166363,
+            "cancelYn": "Y",
+            "date": "2025-05-05",
+            "storeId": "store-4",
+            "transactionId": "tx-53",
+            "productId": "prod-54"
+        },
+        "tx-54": {
+            "amount": 46707,
+            "balance": 134858,
+            "cancelYn": "Y",
+            "date": "2025-04-24",
+            "storeId": "store-7",
+            "transactionId": "tx-54",
+            "productId": "prod-49"
+        },
+        "tx-55": {
+            "amount": 44364,
+            "balance": 506572,
+            "cancelYn": "N",
+            "date": "2025-04-21",
+            "storeId": "store-5",
+            "transactionId": "tx-55",
+            "productId": "prod-21"
+        },
+        "tx-56": {
+            "amount": 66759,
+            "balance": 133957,
+            "cancelYn": "Y",
+            "date": "2025-04-23",
+            "storeId": "store-2",
+            "transactionId": "tx-56",
+            "productId": "prod-96"
+        },
+        "tx-57": {
+            "amount": 13896,
+            "balance": 29222,
+            "cancelYn": "N",
+            "date": "2025-04-15",
+            "storeId": "store-2",
+            "transactionId": "tx-57",
+            "productId": "prod-38"
+        },
+        "tx-58": {
+            "amount": 21892,
+            "balance": 292420,
+            "cancelYn": "Y",
+            "date": "2025-04-16",
+            "storeId": "store-2",
+            "transactionId": "tx-58",
+            "productId": "prod-3"
+        },
+        "tx-59": {
+            "amount": 21858,
+            "balance": 821427,
+            "cancelYn": "N",
+            "date": "2025-04-09",
+            "storeId": "store-4",
+            "transactionId": "tx-59",
+            "productId": "prod-85"
+        },
+        "tx-60": {
+            "amount": 53860,
+            "balance": 565344,
+            "cancelYn": "N",
+            "date": "2025-04-30",
+            "storeId": "store-1",
+            "transactionId": "tx-60",
+            "productId": "prod-82"
+        },
+        "tx-61": {
+            "amount": 58723,
+            "balance": 538025,
+            "cancelYn": "N",
+            "date": "2025-04-29",
+            "storeId": "store-3",
+            "transactionId": "tx-61",
+            "productId": "prod-11"
+        },
+        "tx-63": {
+            "amount": 97167,
+            "balance": 480412,
+            "cancelYn": "N",
+            "date": "2025-04-17",
+            "storeId": "store-9",
+            "transactionId": "tx-63",
+            "productId": "prod-61"
+        },
+        "tx-66": {
+            "amount": 25954,
+            "balance": 899689,
+            "cancelYn": "Y",
+            "date": "2025-04-11",
+            "storeId": "store-5",
+            "transactionId": "tx-66",
+            "productId": "prod-62"
+        },
+        "tx-67": {
+            "amount": 15990,
+            "balance": 846857,
+            "cancelYn": "Y",
+            "date": "2025-04-20",
+            "storeId": "store-10",
+            "transactionId": "tx-67",
+            "productId": "prod-7"
+        },
+        "tx-68": {
+            "amount": 47926,
+            "balance": 340050,
+            "cancelYn": "Y",
+            "date": "2025-04-12",
+            "storeId": "store-10",
+            "transactionId": "tx-68",
+            "productId": "prod-41"
+        },
+        "tx-69": {
+            "amount": 26295,
+            "balance": 668335,
+            "cancelYn": "Y",
+            "date": "2025-04-13",
+            "storeId": "store-3",
+            "transactionId": "tx-69",
+            "productId": "prod-69"
+        },
+        "tx-70": {
+            "amount": 32618,
+            "balance": 290217,
+            "cancelYn": "Y",
+            "date": "2025-04-17",
+            "storeId": "store-8",
+            "transactionId": "tx-70",
+            "productId": "prod-88"
+        },
+        "tx-71": {
+            "amount": 90391,
+            "balance": 667945,
+            "cancelYn": "N",
+            "date": "2025-05-01",
+            "storeId": "store-2",
+            "transactionId": "tx-71",
+            "productId": "prod-27"
+        },
+        "tx-72": {
+            "amount": 1947,
+            "balance": 567328,
+            "cancelYn": "N",
+            "date": "2025-04-19",
+            "storeId": "store-3",
+            "transactionId": "tx-72",
+            "productId": "prod-82"
+        },
+        "tx-73": {
+            "amount": 76588,
+            "balance": 657912,
+            "cancelYn": "Y",
+            "date": "2025-04-26",
+            "storeId": "store-2",
+            "transactionId": "tx-73",
+            "productId": "prod-98"
+        },
+        "tx-76": {
+            "amount": 63248,
+            "balance": 662382,
+            "cancelYn": "Y",
+            "date": "2025-04-29",
+            "storeId": "store-1",
+            "transactionId": "tx-76",
+            "productId": "prod-71"
+        },
+        "tx-78": {
+            "amount": 70285,
+            "balance": 357148,
+            "cancelYn": "Y",
+            "date": "2025-04-26",
+            "storeId": "store-1",
+            "transactionId": "tx-78",
+            "productId": "prod-75"
+        },
+        "tx-79": {
+            "amount": 35317,
+            "balance": 347249,
+            "cancelYn": "Y",
+            "date": "2025-05-06",
+            "storeId": "store-5",
+            "transactionId": "tx-79",
+            "productId": "prod-19"
+        },
+        "tx-80": {
+            "amount": 37473,
+            "balance": 832697,
+            "cancelYn": "N",
+            "date": "2025-05-06",
+            "storeId": "store-10",
+            "transactionId": "tx-80",
+            "productId": "prod-78"
+        },
+        "tx-83": {
+            "amount": 42697,
+            "balance": 268406,
+            "cancelYn": "Y",
+            "date": "2025-04-25",
+            "storeId": "store-9",
+            "transactionId": "tx-83",
+            "productId": "prod-92"
+        },
+        "tx-84": {
+            "amount": 825,
+            "balance": 823953,
+            "cancelYn": "Y",
+            "date": "2025-04-15",
+            "storeId": "store-4",
+            "transactionId": "tx-84",
+            "productId": "prod-77"
+        },
+        "tx-85": {
+            "amount": 78859,
+            "balance": 31207,
+            "cancelYn": "N",
+            "date": "2025-05-04",
+            "storeId": "store-2",
+            "transactionId": "tx-85",
+            "productId": "prod-9"
+        },
+        "tx-86": {
+            "amount": 82915,
+            "balance": 900965,
+            "cancelYn": "Y",
+            "date": "2025-04-30",
+            "storeId": "store-8",
+            "transactionId": "tx-86",
+            "productId": "prod-84"
+        },
+        "tx-87": {
+            "amount": 29375,
+            "balance": 21878,
+            "cancelYn": "Y",
+            "date": "2025-04-09",
+            "storeId": "store-5",
+            "transactionId": "tx-87",
+            "productId": "prod-75"
+        },
+        "tx-88": {
+            "amount": 15317,
+            "balance": 524607,
+            "cancelYn": "N",
+            "date": "2025-04-20",
+            "storeId": "store-2",
+            "transactionId": "tx-88",
+            "productId": "prod-38"
+        },
+        "tx-89": {
+            "amount": 15917,
+            "balance": 154865,
+            "cancelYn": "N",
+            "date": "2025-04-18",
+            "storeId": "store-5",
+            "transactionId": "tx-89",
+            "productId": "prod-50"
+        },
+        "tx-90": {
+            "amount": 27931,
+            "balance": 404474,
+            "cancelYn": "N",
+            "date": "2025-04-11",
+            "storeId": "store-2",
+            "transactionId": "tx-90",
+            "productId": "prod-40"
+        },
+        "tx-92": {
+            "amount": 25017,
+            "balance": 717098,
+            "cancelYn": "Y",
+            "date": "2025-04-22",
+            "storeId": "store-4",
+            "transactionId": "tx-92",
+            "productId": "prod-88"
+        },
+        "tx-93": {
+            "amount": 16705,
+            "balance": 800326,
+            "cancelYn": "Y",
+            "date": "2025-04-21",
+            "storeId": "store-4",
+            "transactionId": "tx-93",
+            "productId": "prod-50"
+        },
+        "tx-96": {
+            "amount": 45407,
+            "balance": 508129,
+            "cancelYn": "N",
+            "date": "2025-05-06",
+            "storeId": "store-1",
+            "transactionId": "tx-96",
+            "productId": "prod-1"
+        },
+        "tx-97": {
+            "amount": 98895,
+            "balance": 187896,
+            "cancelYn": "Y",
+            "date": "2025-04-27",
+            "storeId": "store-1",
+            "transactionId": "tx-97",
+            "productId": "prod-9"
+        },
+        "tx-98": {
+            "amount": 38132,
+            "balance": 607034,
+            "cancelYn": "Y",
+            "date": "2025-04-17",
+            "storeId": "store-5",
+            "transactionId": "tx-98",
+            "productId": "prod-74"
+        },
+        "tx-99": {
+            "amount": 91299,
+            "balance": 332503,
+            "cancelYn": "N",
+            "date": "2025-04-16",
+            "storeId": "store-9",
+            "transactionId": "tx-99",
+            "productId": "prod-96"
+        },
+        "tx-101": {
+            "amount": 25203,
+            "balance": 618224,
+            "cancelYn": "Y",
+            "date": "2025-04-10",
+            "storeId": "store-1",
+            "transactionId": "tx-101",
+            "productId": "prod-42"
+        },
+        "tx-104": {
+            "amount": 11834,
+            "balance": 507606,
+            "cancelYn": "N",
+            "date": "2025-04-09",
+            "storeId": "store-10",
+            "transactionId": "tx-104",
+            "productId": "prod-23"
+        },
+        "tx-105": {
+            "amount": 92846,
+            "balance": 93700,
+            "cancelYn": "N",
+            "date": "2025-05-03",
+            "storeId": "store-8",
+            "transactionId": "tx-105",
+            "productId": "prod-10"
+        },
+        "tx-106": {
+            "amount": 12448,
+            "balance": 343339,
+            "cancelYn": "Y",
+            "date": "2025-04-28",
+            "storeId": "store-5",
+            "transactionId": "tx-106",
+            "productId": "prod-10"
+        },
+        "tx-107": {
+            "amount": 74237,
+            "balance": 402663,
+            "cancelYn": "Y",
+            "date": "2025-05-06",
+            "storeId": "store-8",
+            "transactionId": "tx-107",
+            "productId": "prod-87"
+        },
+        "tx-109": {
+            "amount": 38434,
+            "balance": 996031,
+            "cancelYn": "N",
+            "date": "2025-05-02",
+            "storeId": "store-5",
+            "transactionId": "tx-109",
+            "productId": "prod-61"
+        },
+        "tx-128": {
+            "amount": 88544,
+            "balance": 933902,
+            "cancelYn": "Y",
+            "date": "2025-05-03",
+            "storeId": "store-10",
+            "transactionId": "tx-128",
+            "productId": "prod-16"
+        },
+        "tx-134": {
+            "amount": 494,
+            "balance": 751751,
+            "cancelYn": "N",
+            "date": "2025-04-20",
+            "storeId": "store-10",
+            "transactionId": "tx-134",
+            "productId": "prod-44"
+        },
+        "tx-137": {
+            "amount": 54292,
+            "balance": 44642,
+            "cancelYn": "N",
+            "date": "2025-05-01",
+            "storeId": "store-10",
+            "transactionId": "tx-137",
+            "productId": "prod-63"
+        },
+        "tx-143": {
+            "amount": 11096,
+            "balance": 515483,
+            "cancelYn": "Y",
+            "date": "2025-04-20",
+            "storeId": "store-10",
+            "transactionId": "tx-143",
+            "productId": "prod-76"
+        },
+        "tx-147": {
+            "amount": 27198,
+            "balance": 429684,
+            "cancelYn": "Y",
+            "date": "2025-04-23",
+            "storeId": "store-10",
+            "transactionId": "tx-147",
+            "productId": "prod-19"
+        },
+        "tx-157": {
+            "amount": 9413,
+            "balance": 587222,
+            "cancelYn": "Y",
+            "date": "2025-04-18",
+            "storeId": "store-10",
+            "transactionId": "tx-157",
+            "productId": "prod-3"
+        }
     },
-    "batchHistory": [
-      {
-        "startedAt": "2024-05-06T10:00:00.000Z",
-        "endedAt": "2024-05-06T10:00:10.000Z",
-        "total": 2,
-        "success": 2,
-        "fail": 0
-      }
-    ]
-  }
+    "batchHistory": []
+}

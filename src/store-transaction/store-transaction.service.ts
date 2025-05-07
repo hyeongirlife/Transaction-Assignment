@@ -1,3 +1,4 @@
+// src/store-transaction/store-transaction.service.ts
 import { Injectable, Logger } from '@nestjs/common';
 import axios from 'axios';
 import { StoreTransaction } from '../common/interfaces/store-transaction.interface';
@@ -10,21 +11,16 @@ export class StoreTransactionService {
   async fetchAll(transactions: Transaction[]): Promise<StoreTransaction[]> {
     const result: StoreTransaction[] = [];
     for (const tx of transactions) {
-      let page = 1,
-        totalPage = 1;
       try {
-        do {
-          const { data } = await axios.post(
-            `http://localhost:4002/store-transaction/${tx.storeId}`,
-            { page, date: tx.date },
-          );
-          result.push(...data.list);
-          totalPage = data.pageInfo.totalPage;
-          page++;
-        } while (page <= totalPage);
+        // 한 번에 모든 데이터 요청 (page=1, pageSize=1000)
+        const { data } = await axios.post(
+          `http://localhost:4002/store-transaction/${tx.storeId}`,
+          { page: 1, date: tx.date, pageSize: 1000 }, // pageSize 추가
+        );
+        result.push(...data.list);
       } catch (e) {
         this.logger.warn(
-          `4002 서버에서 storeId=${tx.storeId}, date=${tx.date} 데이터 가져오기 실패: ${e.message}`,
+          `🔴 4002 서버에서 storeId=${tx.storeId}, date=${tx.date} 데이터 가져오기 실패: ${e.message}`,
         );
         // 이 storeId/date 조합은 skip
         continue;

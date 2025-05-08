@@ -72,24 +72,58 @@ export class MergeTransactionService {
       }
 
       try {
-        await this.db.push<MergeTransaction>(
-          `${MERGE_TRANSACTIONS_PATH}[]`,
-          tx,
+        // Read-modify-write for the main transactions array
+        let transactionsArray: MergeTransaction[] = [];
+        try {
+          transactionsArray = await this.db.get<MergeTransaction[]>(
+            MERGE_TRANSACTIONS_PATH,
+          );
+        } catch (e) {
+          // If MERGE_TRANSACTIONS_PATH doesn't exist, getData might throw.
+          // node-json-db's getData throws an error if the path doesn't exist.
+          // We assume it should be an array; if it's missing, initialize it here as a safeguard.
+          // This specific error check might need adjustment based on how node-json-db throws errors for missing paths.
+          this.logger.warn(
+            `${MERGE_TRANSACTIONS_PATH} not found or error during get, initializing as empty array. Error: ${e.message}`,
+          );
+          transactionsArray = []; // Default to empty array if get fails or path is new
+        }
+
+        // Ensure it's an array before pushing
+        if (!Array.isArray(transactionsArray)) {
+          this.logger.warn(
+            `${MERGE_TRANSACTIONS_PATH} was not an array. Resetting to empty array. Current value: ${JSON.stringify(transactionsArray)}`,
+          );
+          transactionsArray = [];
+        }
+
+        transactionsArray.push(tx);
+        await this.db.set<MergeTransaction[]>(
+          MERGE_TRANSACTIONS_PATH,
+          transactionsArray,
         );
 
+        // Original operation: set transaction by ID for quick lookup
         await this.db.set<MergeTransaction>(
           this.getIdPath(tx.transactionId),
           tx,
         );
         this.logger.log(
-          `Successfully saved transaction ID: ${tx.transactionId} (under lock)`,
+          `Successfully saved transaction ID: ${tx.transactionId} (under lock) using read-modify-write for array.`,
         );
       } catch (error) {
         this.logger.error(
           `Failed to save transaction ID: ${tx.transactionId} (under lock)`,
           error.stack,
         );
-        throw new InternalServerErrorException('Failed to save transaction');
+        // Propagate the original error type if it's already an InternalServerErrorException
+        if (error instanceof InternalServerErrorException) {
+          throw error;
+        }
+        throw new InternalServerErrorException(
+          'Failed to save transaction',
+          error.message, // Pass the original error message
+        );
       }
     });
     this.logger.log(

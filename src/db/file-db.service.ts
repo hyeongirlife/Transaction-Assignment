@@ -35,14 +35,11 @@ export class FileDbService {
 
     for (const item of pathsToInitialize) {
       try {
-        const pathExists = await this.db.exists(item.path);
-        if (!pathExists) {
-          await this.db.push(item.path, item.defaultValue, true); // override=true로 설정하여 경로가 없으면 생성
-          this.logger.log(`Initialized path: ${item.path} in db.json`);
-        }
+        await this.db.push(item.path, item.defaultValue, true); // override=true ensures it overwrites
+        this.logger.log(`Reset path: ${item.path} in db.json to default value`);
       } catch (error) {
         this.logger.error(
-          `Failed to initialize DB path: ${item.path}`,
+          `Failed to reset DB path: ${item.path} to default value`,
           error.stack,
         );
         // 특정 경로 초기화 실패 시 에러를 전파하거나, 추가적인 처리를 할 수 있습니다.
@@ -115,6 +112,7 @@ export class FileDbService {
   async push<T>(path: string, data: T): Promise<void> {
     try {
       // 배열에 push하는 경우 override는 false여야 기존 데이터를 유지하며 추가합니다.
+      console.log('경로: ', path, '데이터: ', data);
       await this.db.push(path, data, false);
     } catch (error) {
       this.logger.error(`Failed to push data to path: ${path}`, error.stack);

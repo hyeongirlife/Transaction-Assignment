@@ -47,7 +47,6 @@ export class BatchService {
       this.logger.log('데이터 병합 및 저장 시작');
       for (let i = 0; i < transactions.length; i += this.BATCH_SIZE) {
         const batch = transactions.slice(i, i + this.BATCH_SIZE);
-        const batchStart = Date.now();
 
         // 배치 처리
         await Promise.all(
@@ -80,19 +79,6 @@ export class BatchService {
               );
             }
           }),
-        );
-
-        // 배치 처리 시간 계산
-        const batchEnd = Date.now();
-        const batchTime = batchEnd - batchStart;
-
-        if (batchTime < 1000 && i + this.BATCH_SIZE < transactions.length) {
-          this.logger.log(`다음 배치 처리 전 ${1000 - batchTime}ms 대기...`);
-          await this.sleep(1000 - batchTime);
-        }
-
-        this.logger.log(
-          `[Batch Progress] ${i + batch.length}/${transactions.length} 처리 완료`,
         );
       }
 

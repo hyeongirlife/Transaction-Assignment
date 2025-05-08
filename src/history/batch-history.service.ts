@@ -3,7 +3,6 @@ import { Injectable, Logger } from '@nestjs/common';
 import { FileDbService } from '../db/file-db.service';
 
 const BATCH_HISTORY_PATH = '/batchHistory';
-const BATCH_HISTORY_ARRAY_PATH = '/batchHistory[]';
 
 /**
  * 배치 작업 이력의 데이터 구조를 정의합니다.
@@ -39,7 +38,29 @@ export class BatchHistoryService {
    */
   async record(history: BatchHistory): Promise<void> {
     try {
-      await this.db.push<BatchHistory>(BATCH_HISTORY_ARRAY_PATH, history);
+      // Read-modify-write for the batch history array
+      let historyArray: BatchHistory[] = [];
+      try {
+        historyArray = await this.db.get<BatchHistory[]>(BATCH_HISTORY_PATH);
+      } catch (e) {
+        // If BATCH_HISTORY_PATH doesn't exist or is not an array, initialize as empty.
+        this.logger.warn(
+          `${BATCH_HISTORY_PATH} not found or error during get, initializing as empty array. Error: ${e.message}`,
+        );
+        historyArray = []; // Default to empty array
+      }
+
+      // Ensure it's an array before pushing
+      if (!Array.isArray(historyArray)) {
+        this.logger.warn(
+          `${BATCH_HISTORY_PATH} was not an array. Resetting to empty array. Current value: ${JSON.stringify(historyArray)}`,
+        );
+        historyArray = [];
+      }
+
+      historyArray.push(history);
+      await this.db.set<BatchHistory[]>(BATCH_HISTORY_PATH, historyArray);
+      this.logger.log('Successfully recorded batch history.');
     } catch (error) {
       this.logger.error('Failed to record batch history', error.stack);
       // 배치 히스토리 기록 실패는 심각한 문제로 간주하지 않을 수 있으므로,
